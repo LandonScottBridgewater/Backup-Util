@@ -7,8 +7,9 @@ This is a minimal script to backup your local files automatically.
 Python 3
 
 ## Usage Examples
+
 ```
-./app.py
+python3 ./app.py
 Enter a folder path to back up: /home/fakeuser1/
 Enter a folder to store the backup: /home/fakeuser2/
 Enter 1 to remove all files in the backup folder that aren't also in the main folder, or enter 2 to let those paths remain:
@@ -19,7 +20,7 @@ Deleted /home/fake/fakeuser/documents/fakefile3.docx
 Backup complete!
 ```
 ```
-./app.py
+python3 ./app.py
 Enter a folder path to back up: /home/fakeuser1/
 Enter a folder to store the backup: /home/fakeuser2/
 Enter 1 to remove all files in the backup folder that aren't also in the main folder, or enter 2 to let those paths remain:
