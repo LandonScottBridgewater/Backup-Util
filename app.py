@@ -25,7 +25,6 @@ if clear_backup_excess:
         rel_path = os.path.relpath(root, backup_folder)
         src_dir = os.path.join(main_folder, rel_path)
         
-
         for f in files:
             backup_file = os.path.join(root, f)
             main_file = os.path.join(src_dir, f)
@@ -37,4 +36,3 @@ if clear_backup_excess:
             os.rmdir(root)
 
 print("Backup complete!")
-
