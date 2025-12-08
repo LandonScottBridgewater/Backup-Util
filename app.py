@@ -17,7 +17,7 @@ for root, dirs, files in os.walk(main_folder):
         src_file = os.path.join(root, f)
         dest_file = os.path.join(dest_dir, f)
         if not os.path.exists(dest_file) or os.path.getmtime(src_file) > os.path.getmtime(dest_file):
-            print(dest_file)
+            print(f"Copied to {dest_file}")
             shutil.copy2(src_file, dest_file)
 
 if clear_backup_excess:
@@ -30,9 +30,11 @@ if clear_backup_excess:
             backup_file = os.path.join(root, f)
             main_file = os.path.join(src_dir, f)
             if not os.path.exists(main_file):
+                print(f"Deleted {backup_file}")
                 os.remove(backup_file)
         
         if not os.listdir(root):
             os.rmdir(root)
 
 print("Backup complete!")
+
