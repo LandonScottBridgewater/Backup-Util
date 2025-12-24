@@ -1,4 +1,4 @@
-# Bridgewater's Backup Tool
+# Backup Util
 
 This is a minimal script to backup your local files.
 
